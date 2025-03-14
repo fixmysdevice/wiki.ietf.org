@@ -1,0 +1,22 @@
++----------+
+               | List of  |+
+               | valid    ||
+               | PSAP ids ||
+               +----------+|
+                +----------+
+                    *
+                    * whitelist
+                    *
+                    V
+ Incoming      +----------+    Normal
+ SIP Msg       | SIP      |+   Treatment
+-------------->| Entity   ||=============>
+ + Identity    |          ||(if not in whitelist)
+               +----------+|
+               +----------+
+                    ||
+                    ||
+                    || Preferential
+                    || Treatment
+                    ++=============>
+                      (in whitelist)
